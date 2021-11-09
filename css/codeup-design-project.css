@@ -15,11 +15,11 @@ body {
     background-color: var(--grey);
 }
 
-h1,h2,h3,h4,h5 {
-    font-family: Anton, SansSerif !important;
+h1,h2,h3,h4,h5,h6 {
+    font-family: Anton, sans-serif !important;
 }
 li,p,a,div {
-    font-family: Abel, SansSerif;
+    font-family: Abel, sans-serif;
 
 }
 .content-main{
@@ -36,7 +36,16 @@ li,p,a,div {
     color: white;
     margin: .5em;
 }
-
+.sm-circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    border: none;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 14px;
+    margin: .25em;
+}
 .red {
     background-color: var(--red-1);
 }
