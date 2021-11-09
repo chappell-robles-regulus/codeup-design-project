@@ -25,7 +25,13 @@ li,p,a,div {
 .content-main{
     max-width: 960px;
 }
-
+.works{
+    display: inline-block;
+}
+.img-fix{
+    object-fit: cover;
+    object-position: 0 -20px;
+}
 .circle {
     height: 104px;
     width: 104px;
@@ -62,11 +68,18 @@ li,p,a,div {
 #circles {
     /*justify-content: center;*/
 }
-@media (max-width: 576px) {
+#works-section{
 
 }
+@media (max-width: 576px) {
+.works{
+    max-width: 100%;
+}
+}
 @media (min-width: 576px) {
-    #circles {
-        justify-content: space-evenly;
-    }
+.works{
+}
+#circles {
+    justify-content: space-evenly;
+}
 }
