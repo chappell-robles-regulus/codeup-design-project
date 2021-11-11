@@ -17,7 +17,8 @@ Breakpoints Small to Large:
     box-sizing: border-box;
 }
 body {
-    background-color: var(--grey);
+    background-color: var(--lightgrey);
+
 }
 /* Element Styles */
 h1,h2,h3,h4,h5,h6 {
@@ -52,7 +53,8 @@ li{
 }
 .img-fix{
     object-fit: cover;
-    object-position: 0 -20px;
+    width:100%;
+    height: 81.25%;
 }
 .circle {
     height: 104px;
@@ -70,9 +72,9 @@ li{
     border-radius: 9px;
     border: none;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.45em;
     font-size: 14px;
-    margin: .25em;
+    /*margin: .25em;*/
 }
 .red {
     background-color: var(--red-1);
@@ -92,9 +94,14 @@ li{
     display: flex;
     width: 16%;
 }
+
 .img-last{
     height: 60px;
     width: 60px;
+    object-fit: fill;
+}
+.img-thumbnail {
+    background-color: var(--grey);
 }
 #header-row{
     background-color: var(--lightgrey);
@@ -125,8 +132,9 @@ li{
     justify-content: center;
 }
 #tweet {
-    color: skyblue;
+    color: #0399e8;
 }
+
 @media (max-width: 576px) {
 .works{
     max-width: 100%;
