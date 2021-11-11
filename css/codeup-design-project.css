@@ -1,3 +1,10 @@
+/* Order of Stylesheet:
+Default Styling:
+    Root, All, Body, Pseudo Classes
+    Element, Class, ID
+Breakpoints Small to Large:
+    Element, Class, ID
+*/
 :root {
     --red-1: #E6563B;
     --orange-1: #EB9D3A;
@@ -6,24 +13,39 @@
     --lightgrey: #f0f0f0;
     --grey: #e6e6e6
 }
-
 *{
     box-sizing: border-box;
 }
-
 body {
     background-color: var(--grey);
 }
-
+/* Element Styles */
 h1,h2,h3,h4,h5,h6 {
     font-family: Anton, sans-serif !important;
 }
+h1{
+    font-size: 64px;
+}
 li,p,a,div {
     font-family: Abel, sans-serif;
-
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 3em;
+}
+li{
+    display: inline-block;
 }
 .content-main{
     max-width: 992px;
+    margin: 0 auto;
+}
+.title{
+    margin-top: .25em !important;;
+    margin-bottom: .5em !important;;
 }
 .works{
     display: inline-block;
@@ -40,7 +62,7 @@ li,p,a,div {
     text-align: center;
     line-height: 4.5em;
     color: white;
-    margin: .5em;
+    margin: 0;
 }
 .sm-circle{
     height: 18px;
@@ -74,11 +96,33 @@ li,p,a,div {
     height: 60px;
     width: 60px;
 }
-#circles {
-    /*justify-content: center;*/
+#header-row{
+    background-color: var(--lightgrey);
+    height: 64px;
+    width: 100%;
+    margin-top: 3em;
 }
-#works-section{
-
+#logo-col{
+    display: flex;
+    justify-content: center;
+}
+#logo {
+    height: 115px;
+    overflow: auto;
+    margin: -1.5em auto;
+}
+#co-name{
+    font-size: 32px;
+    text-align: center;
+    margin-top: .5em;
+}
+#title {
+    margin-top: 7em;
+    text-align: center;
+    justify-content: center;
+}
+#circles {
+    justify-content: center;
 }
 #tweet {
     color: skyblue;
@@ -87,11 +131,76 @@ li,p,a,div {
 .works{
     max-width: 100%;
 }
+#circle1, #circle3{
+    margin-left: 4.5em;
+}
+#circle2, #circle4 {
+    margin-right: 4.5em;
+}
 }
 @media (min-width: 576px) {
-.works{
+ul {
+    justify-content: center;
 }
 #circles {
     justify-content: space-evenly;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#nav-holder{
+    margin-top: -8em;
+}
+#nav-holder li {
+    margin: 0 1em;
+}
+#nav-holder li:nth-child(2){
+    margin-right: 5em;
+}
+#nav-holder li:nth-child(3){
+    margin-left: 5em;
+}
+#title {
+    margin-top: 5em;
+}
+#mid-hr{
+    max-width: 66%;
+}
+}
+@media screen and (min-width:768px) {
+#header-row{
+    align-content: center;
+}
+#co-name {
+    margin-top: .25em;
+    margin-left: -1.75em;
+    text-align: left;
+}
+#circles {
+    max-width: 768px;
+}
+/* Removing Small-Specific Margins for Nav Items*/
+#nav-holder ul {
+    justify-content: space-evenly;
+    margin-right: 1em;
+    margin-left: auto;
+}
+#nav-holder {
+    margin-top: 1.5em;
+}
+#nav-holder li {
+    margin: 0 1em;
+}
+#nav-holder li:nth-child(2){
+    margin-right: 1em;
+}
+#nav-holder li:nth-child(3){
+    margin-left: 1em;
+}
+/* Title Row Content */
+#title {
+    margin-top: 3em;
+}
+#mid-hr{
+    max-width: 100%;
 }
 }
