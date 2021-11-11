@@ -21,16 +21,31 @@ body {
 
 }
 /* Element Styles */
-h1,h2,h3,h4,h5,h6 {
-    font-family: Anton, sans-serif !important;
-}
-h1{
-    font-size: 64px;
-}
 li,p,a,div {
     font-family: Abel, sans-serif;
     text-decoration: none;
     color: black;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Anton, sans-serif !important;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 32px;
+}
+h5 {
+    font-size: 28px;
+}
+h6 {
+    font-size: 24px;
 }
 ul{
     display: flex;
@@ -62,9 +77,8 @@ li{
     border-radius: 52px;
     border: 6px solid white;
     text-align: center;
-    line-height: 4.5em;
+    line-height: 3.75em;
     color: white;
-    margin: 0;
 }
 .sm-circle{
     height: 18px;
@@ -74,7 +88,6 @@ li{
     text-align: center;
     line-height: 1.45em;
     font-size: 14px;
-    /*margin: .25em;*/
 }
 .red {
     background-color: var(--red-1);
@@ -104,7 +117,7 @@ li{
     background-color: var(--grey);
 }
 #header-row{
-    background-color: var(--lightgrey);
+    background-color: white !important;
     height: 64px;
     width: 100%;
     margin-top: 3em;
@@ -134,10 +147,20 @@ li{
 #tweet {
     color: #0399e8;
 }
-
+@media (max-width: 442px) {
+#circle1, #circle3 {
+    margin-left: .5em;
+}
+#circle2, #circle4 {
+    margin-right: .5em;
+}
+}
 @media (max-width: 576px) {
 .works{
     max-width: 100%;
+}
+.circle{
+    margin: 0.2em 0.25em;
 }
 #circle1, #circle3{
     margin-left: 4.5em;
