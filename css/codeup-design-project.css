@@ -63,9 +63,9 @@ li{
     margin-top: .25em !important;;
     margin-bottom: .5em !important;;
 }
-.works{
+/*.works{
     display: inline-block;
-}
+}*/
 .img-fix{
     object-fit: cover;
     width:100%;
@@ -79,6 +79,7 @@ li{
     text-align: center;
     line-height: 3.75em;
     color: white;
+    margin: 0.2em .01em;
 }
 .sm-circle{
     height: 18px;
@@ -100,7 +101,8 @@ li{
  }
 .blue {
       background-color: var(--blue-1);
-  }
+}
+
 .column-border {
     border: 4px solid white;
     border-radius: 2px;
@@ -141,42 +143,26 @@ li{
     text-align: center;
     justify-content: center;
 }
-#circles {
-    justify-content: center;
+#inner-circle-row{
+    justify-content: space-evenly;
+}
+#the-last{
+    margin-left: -15px;
 }
 #tweet {
-    color: #0399e8;
-}
-@media (max-width: 442px) {
-#circle1, #circle3 {
-    margin-left: .5em;
-}
-#circle2, #circle4 {
-    margin-right: .5em;
-}
+    color: #0399E8;
 }
 @media (max-width: 576px) {
 .works{
-    max-width: 100%;
-}
-.circle{
-    margin: 0.2em 0.25em;
-}
-#circle1, #circle3{
-    margin-left: 4.5em;
-}
-#circle2, #circle4 {
-    margin-right: 4.5em;
+    margin-left: 0;
 }
 }
 @media (min-width: 576px) {
 ul {
     justify-content: center;
 }
-#circles {
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: 0 auto;
+.works{
+    padding: 0 .5em !important;
 }
 #nav-holder{
     margin-top: -8em;
@@ -197,6 +183,7 @@ ul {
     max-width: 66%;
 }
 }
+/* MEDIA QUERY FOR BREAKPOINT - MEDIUM AND ABOVE*/
 @media screen and (min-width:768px) {
 #header-row{
     align-content: center;
@@ -205,9 +192,6 @@ ul {
     margin-top: .25em;
     margin-left: -1.75em;
     text-align: left;
-}
-#circles {
-    max-width: 768px;
 }
 /* Removing Small-Specific Margins for Nav Items*/
 #nav-holder ul {
