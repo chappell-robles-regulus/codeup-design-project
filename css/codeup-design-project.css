@@ -162,7 +162,7 @@ ul {
     justify-content: center;
 }
 .works{
-    padding: 0 2em !important;
+    padding: 0 .5em !important;
 }
 #nav-holder{
     margin-top: -8em;
